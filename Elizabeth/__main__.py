@@ -47,22 +47,8 @@ from Elizabeth.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
-Hi.. My Name Is *{dispatcher.bot.first_name}* . 
-I Was Made by [Movie Club Admins 🇮🇳](t.me/MOVIECLUB_CHAT) 
 Sorry.. This Bot Can Only Be Used in [Movie Club Group](t.me/MOVIECLUB_CHAT)!...
 """
-
-buttons = [
-    [
-        InlineKeyboardButton(
-            text="Add to Group 👥", url="t.me/elizabeth_tgbot?startgroup=true"
-        ),
-        InlineKeyboardButton(
-            text="Help & Commands ❔", url=f"t.me/{dispatcher.bot.username}?start=help", 
-        ),
-    ]
-]
-
 
 buttons += [
     [
@@ -78,9 +64,6 @@ buttons += [
 
 
 HELP_STRINGS = f"""
-Hellow there! My name is *{dispatcher.bot.first_name}*.
-I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
-the things I can help you with.
 
 *Main* commands available:
  × /start: Starts me, can be used to check i'm alive or no...
