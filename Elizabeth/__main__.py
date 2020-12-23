@@ -47,20 +47,9 @@ from Elizabeth.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
-Hey there! my name is *{dispatcher.bot.first_name}*.
-Any questions on how to use me? use /help
-
-Join Our [Group](https://t.me/Elizabeth_Support) If You wanna Report Issue 🙂
-
-I'm here to make your group management fun and easy!
-I have lots of handy features ☺️ such as :
-
-• flood control.         • Note'S keeping system.
-• Warning System.   • Predetermined Filters.
-
-*Managed With ❤️ By :* [༄ᶦᶰᵈ᭄𖤓𝐏 𝐑 𝐈 𝐍 𝐂 𝐄™ 🇮🇳](https://t.me/p_rinc_e)
-
-Wanna Add me to your Group? Just click the button below!
+Hi.. *{dispatcher.bot.first_name}* Welcome 🙏... 
+This Bot Is Maintained by [Movie Club Admins 🇮🇳](t.me/MOVIECLUB_CHAT) 
+Sorry.. This Bot Can Only Be Used in [Movie Club Group](t.me/MOVIECLUB_CHAT)!...
 """
 
 buttons = [
@@ -82,7 +71,7 @@ buttons += [
             url=f"t.me/{dispatcher.bot.username}?start=help",
         ),
         InlineKeyboardButton(
-            text="Support Group 🎗️", url="https://t.me/Elizabeth_Support"
+            text="Join Movie Club", url="t.me/MOVIECLUB_CHAT"
         ),
     ]
 ]
