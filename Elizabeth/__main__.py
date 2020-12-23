@@ -47,8 +47,8 @@ from Elizabeth.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
-Hi.. *{dispatcher.bot.first_name}* Welcome 🙏... 
-This Bot Is Maintained by [Movie Club Admins 🇮🇳](t.me/MOVIECLUB_CHAT) 
+Hi.. My Name Is *{dispatcher.bot.first_name}* . 
+I Was Made by [Movie Club Admins 🇮🇳](t.me/MOVIECLUB_CHAT) 
 Sorry.. This Bot Can Only Be Used in [Movie Club Group](t.me/MOVIECLUB_CHAT)!...
 """
 
@@ -58,7 +58,7 @@ buttons = [
             text="Add to Group 👥", url="t.me/elizabeth_tgbot?startgroup=true"
         ),
         InlineKeyboardButton(
-            text="Gban Logs 🚫", url="https://t.me/telegram"
+            text="Help & Commands ❔", url=f"t.me/{dispatcher.bot.username}?start=help", 
         ),
     ]
 ]
@@ -67,8 +67,8 @@ buttons = [
 buttons += [
     [
         InlineKeyboardButton(
-            text="Help & Commands ❔",
-            url=f"t.me/{dispatcher.bot.username}?start=help",
+            text="Join Movie Club Channels",
+            url="t.me/MOVIECLUB_LINKS",
         ),
         InlineKeyboardButton(
             text="Join Movie Club", url="t.me/MOVIECLUB_CHAT"
