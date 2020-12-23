@@ -50,14 +50,26 @@ PM_START_TEXT = f"""
 Sorry.. This Bot Can Only Be Used in [Movie Club Group](t.me/MOVIECLUB_CHAT)!...
 """
 
+buttons = [
+    [
+        InlineKeyboardButton(
+            text="Add to Group 👥", url="t.me/elizabeth_tgbot?startgroup=true"
+        ),
+        InlineKeyboardButton(
+            text="Gban Logs 🚫", url="https://t.me/telegram"
+        ),
+    ]
+]
+
+
 buttons += [
     [
         InlineKeyboardButton(
-            text="Join Movie Club Channels",
-            url="t.me/MOVIECLUB_LINKS",
+            text="Help & Commands ❔",
+            url=f"t.me/{dispatcher.bot.username}?start=help",
         ),
         InlineKeyboardButton(
-            text="Join Movie Club", url="t.me/MOVIECLUB_CHAT"
+            text="Support Group 🎗️", url="https://t.me/Elizabeth_Support"
         ),
     ]
 ]
